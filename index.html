@@ -1,0 +1,1268 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Metta Bhavana - Loving-Kindness Meditation | Venerable PYINNYANANDA -
+      México 2026
+    </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/_sdk/element_sdk.js"></script>
+    <style>
+      body {
+        box-sizing: border-box;
+      }
+
+      @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Lato:wght@300;400;700&display=swap");
+
+      body {
+        font-family: "Lato", sans-serif;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4 {
+        font-family: "Cormorant Garamond", serif;
+      }
+
+      .card-hover {
+        transition: transform 0.4s ease, box-shadow 0.4s ease;
+      }
+
+      .card-hover:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+      }
+
+      .fade-in {
+        animation: fadeIn 1.2s ease-in;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .lotus-pulse {
+        animation: pulse 3s ease-in-out infinite;
+      }
+
+      @keyframes pulse {
+        0%,
+        100% {
+          transform: scale(1);
+          opacity: 1;
+        }
+        50% {
+          transform: scale(1.05);
+          opacity: 0.9;
+        }
+      }
+
+      .gradient-text {
+        background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+
+      .chat-bubble-user {
+        background: linear-gradient(135deg, #57329d, #e51d70);
+        color: white;
+        border-radius: 18px 18px 4px 18px;
+      }
+
+      .chat-bubble-bot {
+        background: #f3f4f6;
+        color: #1f2937;
+        border-radius: 18px 18px 18px 4px;
+      }
+
+      .chat-input:focus {
+        outline: none;
+        border-color: #57329d;
+      }
+
+      #chat-widget {
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+      }
+
+      .chat-messages::-webkit-scrollbar {
+        width: 6px;
+      }
+
+      .chat-messages::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        border-radius: 10px;
+      }
+
+      .chat-messages::-webkit-scrollbar-thumb {
+        background: #57329d;
+        border-radius: 10px;
+      }
+    </style>
+    <script
+      src="https://cdn.tailwindcss.com/3.4.17"
+      type="text/javascript"
+    ></script>
+    <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+  </head>
+  <body class="h-full">
+    <div class="w-full h-full overflow-auto" style="background-color: #ffffff">
+      <!-- Navigation Menu -->
+      <nav
+        class="fixed top-0 w-full z-50 shadow-lg backdrop-blur-md"
+        style="background-color: rgba(87, 50, 157, 0.95)"
+      >
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex justify-between items-center h-16">
+            <div class="flex items-center gap-3">
+              <img
+                src="https://raw.githubusercontent.com/alejandrabarcena/pynnyananda2026/refs/heads/main/logo%20de%20pin.png"
+                alt="Metta Bhavana Logo"
+                class="h-14 w-14 object-contain flex-shrink-0"
+                loading="lazy"
+                onerror="this.style.display='none';"
+              />
+              <div>
+                <h1 class="text-2xl text-white font-bold">Metta Bhavana</h1>
+                <p class="text-xs text-yellow-200">Venerable PYINNYANANDA</p>
+              </div>
+            </div>
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex space-x-8">
+              <a
+                href="#home"
+                class="nav-link text-white hover:text-yellow-200 transition-colors duration-300 font-medium"
+                >Home</a
+              >
+              <a
+                href="#welcome"
+                class="nav-link text-white hover:text-yellow-200 transition-colors duration-300 font-medium"
+                >Welcome</a
+              >
+              <a
+                href="#experience"
+                class="nav-link text-white hover:text-yellow-200 transition-colors duration-300 font-medium"
+                >Experience</a
+              >
+              <a
+                href="#metta"
+                class="nav-link text-white hover:text-yellow-200 transition-colors duration-300 font-medium"
+                >Metta Practice</a
+              >
+              <a
+                href="#deities"
+                class="nav-link text-white hover:text-yellow-200 transition-colors duration-300 font-medium"
+                >Divine Inspiration</a
+              >
+              <a
+                href="#contact"
+                class="nav-link text-white hover:text-yellow-200 transition-colors duration-300 font-medium"
+                >Contact</a
+              >
+            </div>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="md:hidden text-white p-2">
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewbox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div
+          id="mobile-menu"
+          class="hidden md:hidden"
+          style="background-color: rgba(87, 50, 157, 0.98)"
+        >
+          <div class="px-2 pt-2 pb-3 space-y-1">
+            <a
+              href="#home"
+              class="nav-link block px-3 py-2 text-white hover:bg-purple-800 rounded"
+              >Home</a
+            >
+            <a
+              href="#welcome"
+              class="nav-link block px-3 py-2 text-white hover:bg-purple-800 rounded"
+              >Welcome</a
+            >
+            <a
+              href="#experience"
+              class="nav-link block px-3 py-2 text-white hover:bg-purple-800 rounded"
+              >Experience</a
+            >
+            <a
+              href="#metta"
+              class="nav-link block px-3 py-2 text-white hover:bg-purple-800 rounded"
+              >Metta Practice</a
+            >
+            <a
+              href="#deities"
+              class="nav-link block px-3 py-2 text-white hover:bg-purple-800 rounded"
+              >Divine Inspiration</a
+            >
+            <a
+              href="#contact"
+              class="nav-link block px-3 py-2 text-white hover:bg-purple-800 rounded"
+              >Contact</a
+            >
+          </div>
+        </div>
+      </nav>
+      <!-- Hero Section -->
+      <section
+        id="home"
+        class="text-white py-32 px-6 text-center relative overflow-hidden"
+        style="
+          margin-top: 64px;
+          background: linear-gradient(135deg, #57329d 0%, #e51d70 100%);
+        "
+      >
+        <div class="absolute inset-0 opacity-10">
+          <div class="absolute top-10 left-10 text-9xl lotus-pulse">🪷</div>
+          <div
+            class="absolute bottom-10 right-10 text-9xl lotus-pulse"
+            style="animation-delay: 1.5s"
+          >
+            🪷
+          </div>
+          <div
+            class="absolute top-1/2 left-1/4 text-7xl lotus-pulse"
+            style="animation-delay: 0.7s"
+          >
+            ☸️
+          </div>
+          <div
+            class="absolute top-1/3 right-1/4 text-7xl lotus-pulse"
+            style="animation-delay: 2s"
+          >
+            ☸️
+          </div>
+        </div>
+        <div class="max-w-5xl mx-auto fade-in relative z-10">
+          <img
+            src="https://raw.githubusercontent.com/wuweiclomx/Pynnyanada2026/refs/heads/main/LOGO%20PY.png"
+            alt="Logo"
+            class="h-32 md:h-40 mx-auto mb-6 lotus-pulse"
+            loading="lazy"
+            onerror="this.style.display='none';"
+          />
+          <h1
+            class="text-5xl md:text-7xl font-bold mb-6"
+            style="
+              font-family: 'Cormorant Garamond', serif;
+              text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            "
+          >
+            Venerable PYINNYANANDA
+          </h1>
+          <p class="text-2xl md:text-3xl mb-4 font-light italic">
+            Loving-Kindness Meditation
+          </p>
+          <p
+            class="text-xl md:text-2xl mb-8 opacity-95 max-w-3xl mx-auto leading-relaxed"
+          >
+            Join me in exploring the path of compassion through meditation
+            classes and sharing experiences from Myanmar
+          </p>
+          <div class="flex items-center justify-center gap-4 mb-10 text-5xl">
+            <span class="lotus-pulse">💜</span>
+            <span class="lotus-pulse" style="animation-delay: 0.5s">🙏</span>
+            <span class="lotus-pulse" style="animation-delay: 1s">☸️</span>
+          </div>
+          <p
+            class="text-lg md:text-xl mb-10 font-medium"
+            style="color: #edb007"
+          >
+            Guided by Venerable PYINNYANANDA
+          </p>
+          <a
+            href="#contact"
+            class="join-btn inline-block px-10 md:px-12 py-5 md:py-6 rounded-full text-lg md:text-xl font-bold shadow-2xl hover:scale-105 transition-transform duration-300"
+            style="background-color: #28b133; color: white"
+          >
+            🪷 Join Meditation Classes
+          </a>
+        </div>
+      </section>
+      <!-- Welcome Section -->
+      <section
+        id="welcome"
+        class="py-20 px-6"
+        style="background: linear-gradient(135deg, #28b133 0%, #57329d 100%)"
+      >
+        <div class="max-w-6xl mx-auto">
+          <div class="text-center mb-16 fade-in">
+            <h2 class="text-5xl md:text-6xl font-bold mb-6 text-white">
+              A Warm Welcome
+            </h2>
+            <p
+              class="text-xl md:text-2xl text-white opacity-90 max-w-3xl mx-auto leading-relaxed"
+            >
+              It brings me great joy to welcome you to this journey of Metta
+              Bhavana meditation
+            </p>
+          </div>
+          <div class="bg-white rounded-3xl shadow-2xl p-8 md:p-12 fade-in">
+            <div class="grid md:grid-cols-2 gap-10 md:gap-12 items-center">
+              <div>
+                <div
+                  class="w-48 h-48 md:w-56 md:h-56 mx-auto mb-6 rounded-full overflow-hidden lotus-pulse"
+                  style="box-shadow: 0 10px 40px rgba(87, 50, 157, 0.3)"
+                >
+                  <img
+                    src="https://raw.githubusercontent.com/alejandrabarcena/pynnyananda2026/refs/heads/main/pin%20foto2.png"
+                    alt="Venerable PYINNYANANDA"
+                    class="w-full h-full object-cover"
+                    loading="lazy"
+                    onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\'w-full h-full flex items-center justify-center text-8xl\' style=\'background: linear-gradient(135deg, #57329d, #e51d70);\'>🙏</div>';"
+                  />
+                </div>
+                <h3
+                  class="text-3xl md:text-4xl font-bold text-center mb-3"
+                  style="color: #57329d"
+                >
+                  Venerable PYINNYANANDA
+                </h3>
+                <p
+                  class="text-center font-semibold text-lg mb-4"
+                  style="color: #e51d70"
+                >
+                  Ph.D. Candidate in Buddhist Studies
+                </p>
+                <p class="text-center text-gray-600 italic">
+                  Buddhist University, Myanmar
+                </p>
+              </div>
+              <div class="space-y-6 text-gray-700">
+                <div
+                  class="bg-gradient-to-br from-purple-50 to-pink-50 p-6 rounded-2xl shadow-md"
+                >
+                  <div class="flex items-start gap-4">
+                    <span class="text-4xl">💜</span>
+                    <div>
+                      <h4 class="font-bold text-xl mb-2" style="color: #57329d">
+                        Welcome Message
+                      </h4>
+                      <p class="leading-relaxed">
+                        For over 20 years, I have dedicated my life to Buddhist
+                        practice and teachings. I invite you to join our
+                        meditation classes where we explore the path of
+                        compassion together.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="bg-gradient-to-br from-purple-50 to-pink-50 p-6 rounded-2xl shadow-md"
+                >
+                  <div class="flex items-start gap-4">
+                    <span class="text-4xl">🪷</span>
+                    <div>
+                      <h4 class="font-bold text-xl mb-2" style="color: #57329d">
+                        What I Share
+                      </h4>
+                      <p class="leading-relaxed">
+                        Through meditation classes, I share my experiences from
+                        Buddhist University in Myanmar and guide you in
+                        cultivating loving-kindness inspired by Tara and
+                        Avalokitesvara.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="bg-gradient-to-br from-purple-50 to-pink-50 p-6 rounded-2xl shadow-md"
+                >
+                  <div class="flex items-start gap-4">
+                    <span class="text-4xl">☸️</span>
+                    <div>
+                      <h4 class="font-bold text-xl mb-2" style="color: #57329d">
+                        My Journey
+                      </h4>
+                      <p class="leading-relaxed">
+                        Born in Myanmar, ordained at age 20, with 15 years at
+                        Pegu Pali University and advanced Buddhist studies
+                        across Asia.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Experience Section -->
+      <section
+        id="experience"
+        class="py-20 px-6"
+        style="background-color: #ffffff"
+      >
+        <div class="max-w-6xl mx-auto">
+          <div class="text-center mb-16">
+            <h2
+              class="text-5xl md:text-6xl font-bold mb-6"
+              style="color: #57329d"
+            >
+              My Experience &amp; Journey
+            </h2>
+            <p class="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto">
+              Sharing wisdom from Buddhist University, Myanmar
+            </p>
+          </div>
+          <div class="grid md:grid-cols-2 gap-8">
+            <div
+              class="bg-gradient-to-br from-purple-50 to-pink-50 p-8 rounded-3xl shadow-lg card-hover"
+            >
+              <div class="text-6xl mb-4 text-center">🎓</div>
+              <h3
+                class="text-2xl font-bold mb-6 text-center"
+                style="color: #57329d"
+              >
+                Academic Background
+              </h3>
+              <ul class="space-y-4 text-gray-700">
+                <li class="flex items-start gap-3">
+                  <span class="text-2xl">📚</span>
+                  <span>15 years at Pegu Pali University, Myanmar</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-2xl">🎓</span>
+                  <span
+                    ><strong>BA in Buddhism</strong> -
+                    Mahachulalongkornrajavidyalaya University, Thailand
+                    (2018)</span
+                  >
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-2xl">🎓</span>
+                  <span
+                    ><strong>MA in Buddhism</strong> - University of Kelaniya,
+                    Sri Lanka (2022)</span
+                  >
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-2xl">🎓</span>
+                  <span
+                    ><strong>Ph.D. Candidate</strong> - Lumbini Buddhist
+                    University, Nepal (Current)</span
+                  >
+                </li>
+              </ul>
+            </div>
+            <div
+              class="bg-gradient-to-br from-green-50 to-emerald-50 p-8 rounded-3xl shadow-lg card-hover"
+            >
+              <div class="text-6xl mb-4 text-center">👨‍🏫</div>
+              <h3
+                class="text-2xl font-bold mb-6 text-center"
+                style="color: #28b133"
+              >
+                Teaching &amp; Practice
+              </h3>
+              <ul class="space-y-4 text-gray-700">
+                <li class="flex items-start gap-3">
+                  <span class="text-2xl">🏛️</span>
+                  <span>Professor at Kyunhla Buddhist University</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-2xl">���</span>
+                  <span>Metta Bhavana meditation instructor since 2022</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-2xl">📖</span>
+                  <span>Specialist in Pali and Buddhist studies</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-2xl">🙏</span>
+                  <span>Over 20 years of continuous practice</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Metta Practice Section -->
+      <section
+        id="metta"
+        class="py-20 px-6"
+        style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%)"
+      >
+        <div class="max-w-6xl mx-auto">
+          <div class="text-center mb-16">
+            <h2
+              class="text-5xl md:text-6xl font-bold mb-6"
+              style="color: #57329d"
+            >
+              Meditation Classes
+            </h2>
+            <p class="text-xl md:text-2xl text-gray-700 max-w-3xl mx-auto">
+              Learn Metta Bhavana - the practice of cultivating loving-kindness
+              and compassion
+            </p>
+          </div>
+          <div class="grid md:grid-cols-3 gap-8 mb-16">
+            <div
+              class="bg-white p-8 rounded-3xl card-hover shadow-lg border-2"
+              style="border-color: #57329d"
+            >
+              <div class="text-6xl mb-4 text-center">💜</div>
+              <h3
+                class="text-2xl font-bold mb-4 text-center"
+                style="color: #57329d"
+              >
+                Loving-Kindness
+              </h3>
+              <p class="text-gray-600 text-center leading-relaxed">
+                Develop boundless love and kindness for yourself and all beings
+              </p>
+            </div>
+            <div
+              class="bg-white p-8 rounded-3xl card-hover shadow-lg border-2"
+              style="border-color: #28b133"
+            >
+              <div class="text-6xl mb-4 text-center">🕊️</div>
+              <h3
+                class="text-2xl font-bold mb-4 text-center"
+                style="color: #28b133"
+              >
+                Compassion
+              </h3>
+              <p class="text-gray-600 text-center leading-relaxed">
+                Cultivate deep empathy and wish for all beings to be free from
+                suffering
+              </p>
+            </div>
+            <div
+              class="bg-white p-8 rounded-3xl card-hover shadow-lg border-2"
+              style="border-color: #e51d70"
+            >
+              <div class="text-6xl mb-4 text-center">✨</div>
+              <h3
+                class="text-2xl font-bold mb-4 text-center"
+                style="color: #e51d70"
+              >
+                Inner Peace
+              </h3>
+              <p class="text-gray-600 text-center leading-relaxed">
+                Experience profound tranquility and emotional healing through
+                practice
+              </p>
+            </div>
+          </div>
+          <div
+            class="rounded-3xl p-8 md:p-10"
+            style="
+              background: linear-gradient(135deg, #57329d 0%, #e51d70 100%);
+            "
+          >
+            <h3
+              class="text-3xl md:text-4xl font-bold text-center text-white mb-8"
+            >
+              The Four Immeasurables
+            </h3>
+            <div class="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+              <div
+                class="bg-white bg-opacity-20 backdrop-blur-sm p-6 rounded-2xl"
+              >
+                <div class="flex items-center gap-4 mb-3">
+                  <span class="text-5xl">💜</span>
+                  <h4 class="text-2xl font-bold text-white">Metta (Love)</h4>
+                </div>
+                <p class="text-lg text-white opacity-95">
+                  May all beings be happy and peaceful
+                </p>
+              </div>
+              <div
+                class="bg-white bg-opacity-20 backdrop-blur-sm p-6 rounded-2xl"
+              >
+                <div class="flex items-center gap-4 mb-3">
+                  <span class="text-5xl">🤍</span>
+                  <h4 class="text-2xl font-bold text-white">
+                    Karuna (Compassion)
+                  </h4>
+                </div>
+                <p class="text-lg text-white opacity-95">
+                  May all beings be free from suffering
+                </p>
+              </div>
+              <div
+                class="bg-white bg-opacity-20 backdrop-blur-sm p-6 rounded-2xl"
+              >
+                <div class="flex items-center gap-4 mb-3">
+                  <span class="text-5xl">😊</span>
+                  <h4 class="text-2xl font-bold text-white">Mudita (Joy)</h4>
+                </div>
+                <p class="text-lg text-white opacity-95">
+                  May all beings rejoice in their happiness
+                </p>
+              </div>
+              <div
+                class="bg-white bg-opacity-20 backdrop-blur-sm p-6 rounded-2xl"
+              >
+                <div class="flex items-center gap-4 mb-3">
+                  <span class="text-5xl">⚖️</span>
+                  <h4 class="text-2xl font-bold text-white">
+                    Upekkha (Equanimity)
+                  </h4>
+                </div>
+                <p class="text-lg text-white opacity-95">
+                  May all beings rest in peace and balance
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Divine Inspiration Section -->
+      <section
+        id="deities"
+        class="py-20 px-6"
+        style="background-color: #ffffff"
+      >
+        <div class="max-w-6xl mx-auto">
+          <div class="text-center mb-16">
+            <h2
+              class="text-5xl md:text-6xl font-bold mb-6"
+              style="color: #059669"
+            >
+              Divine Inspiration
+            </h2>
+            <p class="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto">
+              Drawing wisdom from the great Bodhisattvas of compassion
+            </p>
+          </div>
+          <div class="grid md:grid-cols-2 gap-10 mb-12">
+            <!-- Green Tara -->
+            <div
+              class="bg-gradient-to-br from-green-50 to-emerald-100 rounded-3xl p-8 md:p-10 card-hover shadow-xl"
+            >
+              <div class="text-center mb-6">
+                <div class="text-8xl mb-4">🟢</div>
+                <h3
+                  class="text-3xl md:text-4xl font-bold mb-3"
+                  style="color: #059669"
+                >
+                  Green Tara
+                </h3>
+                <p class="text-lg font-semibold" style="color: #10b981">
+                  Mother of Liberation
+                </p>
+              </div>
+              <div class="space-y-4 text-gray-700">
+                <p class="leading-relaxed text-center italic">
+                  "Swift protectress, born from the tears of Avalokitesvara"
+                </p>
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                  <h4 class="font-bold text-lg mb-3 flex items-center gap-2">
+                    <span>🌟</span> Sacred Qualities
+                  </h4>
+                  <ul class="space-y-2">
+                    <li>• Active compassion and swift assistance</li>
+                    <li>• Protection from fears and obstacles</li>
+                    <li>• Feminine wisdom and nurturing energy</li>
+                    <li>• Liberation through loving action</li>
+                  </ul>
+                </div>
+                <p
+                  class="text-center font-semibold pt-4"
+                  style="color: #059669"
+                >
+                  "Om Tare Tuttare Ture Soha"
+                </p>
+              </div>
+            </div>
+            <!-- Avalokitesvara -->
+            <div
+              class="bg-gradient-to-br from-blue-50 to-cyan-100 rounded-3xl p-8 md:p-10 card-hover shadow-xl"
+            >
+              <div class="text-center mb-6">
+                <div class="text-8xl mb-4">🔵</div>
+                <h3
+                  class="text-3xl md:text-4xl font-bold mb-3"
+                  style="color: #0891b2"
+                >
+                  Avalokitesvara
+                </h3>
+                <p class="text-lg font-semibold" style="color: #06b6d4">
+                  The One Who Hears the Cries
+                </p>
+              </div>
+              <div class="space-y-4 text-gray-700">
+                <p class="leading-relaxed text-center italic">
+                  "Bodhisattva of infinite compassion and mercy"
+                </p>
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                  <h4 class="font-bold text-lg mb-3 flex items-center gap-2">
+                    <span>🙏</span> Sacred Qualities
+                  </h4>
+                  <ul class="space-y-2">
+                    <li>• Boundless compassion for all beings</li>
+                    <li>• Listening deeply to suffering</li>
+                    <li>• Thousand arms of skillful means</li>
+                    <li>• Universal love without discrimination</li>
+                  </ul>
+                </div>
+                <p
+                  class="text-center font-semibold pt-4"
+                  style="color: #0891b2"
+                >
+                  "Om Mani Padme Hum"
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-gradient-to-r from-green-100 via-emerald-100 to-cyan-100 rounded-3xl p-8 md:p-10 text-center"
+          >
+            <h3
+              class="text-3xl md:text-4xl font-bold mb-6"
+              style="color: #059669"
+            >
+              Practice Inspired by Divine Compassion
+            </h3>
+            <p
+              class="text-lg md:text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed mb-6"
+            >
+              Our Metta Bhavana practice draws from the infinite compassion of
+              Green Tara's swift action and Avalokitesvara's boundless love,
+              guiding you to embody these divine qualities in your daily life.
+            </p>
+            <div class="flex justify-center gap-6 text-6xl">
+              <span class="lotus-pulse">🪷</span>
+              <span class="lotus-pulse" style="animation-delay: 0.5s">☸️</span>
+              <span class="lotus-pulse" style="animation-delay: 1s">🪷</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Contact Section -->
+      <section
+        id="contact"
+        class="py-20 px-6 text-white"
+        style="background: linear-gradient(135deg, #57329d 0%, #e51d70 100%)"
+      >
+        <div class="max-w-4xl mx-auto text-center">
+          <div class="mb-12">
+            <div class="text-8xl mb-6 lotus-pulse">🪷</div>
+            <h3 class="text-4xl md:text-6xl font-bold mb-6">
+              Join Our Meditation Classes
+            </h3>
+            <p
+              class="text-xl md:text-2xl opacity-95 mb-8 max-w-2xl mx-auto leading-relaxed"
+            >
+              Begin your journey of loving-kindness and compassion with
+              Venerable PYINNYANANDA
+            </p>
+          </div>
+          <div class="mb-12">
+            <a
+              href="https://tally.so/r/ODX667"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-block px-12 md:px-16 py-6 md:py-8 rounded-full text-xl md:text-2xl font-bold text-white shadow-2xl hover:scale-110 transition-all duration-300"
+              style="background: linear-gradient(135deg, #28b133, #10b981)"
+            >
+              📝 Register for Classes
+            </a>
+          </div>
+          <div class="mt-16 grid md:grid-cols-3 gap-8 max-w-3xl mx-auto">
+            <div
+              class="p-6 rounded-2xl backdrop-blur-sm"
+              style="background-color: rgba(255, 255, 255, 0.2)"
+            >
+              <div class="text-5xl mb-4">📧</div>
+              <h4 class="font-bold text-xl mb-3">Email</h4>
+              <p class="text-sm break-all">Pyinnyananda12@gmail.com</p>
+            </div>
+            <div
+              class="p-6 rounded-2xl backdrop-blur-sm"
+              style="background-color: rgba(255, 255, 255, 0.2)"
+            >
+              <div class="text-5xl mb-4">📱</div>
+              <h4 class="font-bold text-xl mb-3">Phone</h4>
+              <p class="text-sm mb-1">Myanmar:</p>
+              <p class="text-xs mb-2">+959 266 767 771</p>
+              <p class="text-sm mb-1">Thailand:</p>
+              <p class="text-xs">+66 099 350 5076</p>
+            </div>
+            <div
+              class="p-6 rounded-2xl backdrop-blur-sm"
+              style="background-color: rgba(255, 255, 255, 0.2)"
+            >
+              <div class="text-5xl mb-4">📍</div>
+              <h4 class="font-bold text-xl mb-3">Location</h4>
+              <p class="text-sm">Mexico City</p>
+              <p class="text-sm">México</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Footer -->
+      <footer
+        class="py-10 px-6 text-center"
+        style="background-color: #1a1a1a; color: #d1d5db"
+      >
+        <div class="max-w-4xl mx-auto">
+          <div class="text-5xl mb-4 lotus-pulse">🪷</div>
+          <p class="mb-4 text-xl font-semibold">
+            Metta Bhavana - Loving-Kindness Meditation
+          </p>
+          <p class="mb-6 text-lg">Venerable PYINNYANANDA</p>
+          <p class="text-sm opacity-75 mb-6">
+            Buddhist University, Myanmar | Mexico City
+          </p>
+          <div class="flex justify-center space-x-6 text-3xl mb-6">
+            <span>�����</span> <span>🪷</span> <span>☸️</span> <span>🙏</span>
+          </div>
+          <p class="text-sm italic opacity-90 mb-4">
+            "May all beings be happy, peaceful, and free from suffering"
+          </p>
+          <p class="text-xs opacity-60">© 2024 All rights reserved</p>
+        </div>
+      </footer>
+      <!-- Chatbot Widget -->
+      <div
+        id="chat-button"
+        class="fixed bottom-6 right-6 z-50 cursor-pointer hover:scale-110 transition-transform duration-300"
+      >
+        <div
+          class="w-16 h-16 rounded-full flex items-center justify-center shadow-2xl lotus-pulse"
+          style="background: linear-gradient(135deg, #57329d, #e51d70)"
+        >
+          <span class="text-3xl">💬</span>
+        </div>
+      </div>
+      <div
+        id="chat-widget"
+        class="fixed bottom-24 right-6 w-80 md:w-96 bg-white rounded-3xl z-50 hidden flex-col"
+        style="height: 500px; max-height: 80%"
+      >
+        <!-- Chat Header -->
+        <div
+          class="p-4 rounded-t-3xl text-white flex items-center justify-between"
+          style="background: linear-gradient(135deg, #57329d, #e51d70)"
+        >
+          <div class="flex items-center gap-3">
+            <div
+              class="w-10 h-10 rounded-full overflow-hidden border-2 border-white"
+            >
+              <img
+                src="https://raw.githubusercontent.com/alejandrabarcena/pynnyananda2026/refs/heads/main/pin%20foto2.png"
+                alt="Venerable"
+                class="w-full h-full object-cover"
+                loading="lazy"
+                onerror="this.parentElement.innerHTML='<div class=\'w-10 h-10 flex items-center justify-center text-2xl\' style=\'background: white; color: #57329d;\'>🙏</div>';"
+              />
+            </div>
+            <div>
+              <h4 class="font-bold">Metta Bot</h4>
+              <p class="text-xs opacity-90">Ask about meditation classes</p>
+            </div>
+          </div>
+          <button
+            id="chat-close"
+            class="text-white hover:scale-110 transition-transform"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewbox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <!-- Chat Messages -->
+        <div
+          id="chat-messages"
+          class="chat-messages flex-1 overflow-y-auto p-4 space-y-4"
+          style="background-color: #fafafa"
+        >
+          <div class="flex gap-2">
+            <div class="chat-bubble-bot p-3 max-w-xs shadow-sm">
+              <p class="text-sm">
+                🙏 Greetings! I'm here to help you learn about our meditation
+                classes. How may I assist you today?
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Quick Reply Buttons -->
+        <div id="quick-replies" class="px-4 py-2 space-y-2">
+          <button
+            class="quick-reply-btn w-full text-left px-4 py-2 rounded-full text-sm font-medium transition-all hover:scale-105"
+            style="background-color: #f3e8ff; color: #57329d"
+            data-message="What classes do you offer?"
+          >
+            📚 What classes do you offer?
+          </button>
+          <button
+            class="quick-reply-btn w-full text-left px-4 py-2 rounded-full text-sm font-medium transition-all hover:scale-105"
+            style="background-color: #f3e8ff; color: #57329d"
+            data-message="How can I contact you?"
+          >
+            📧 How can I contact you?
+          </button>
+          <button
+            class="quick-reply-btn w-full text-left px-4 py-2 rounded-full text-sm font-medium transition-all hover:scale-105"
+            style="background-color: #f3e8ff; color: #57329d"
+            data-message="Tell me about Metta Bhavana"
+          >
+            🪷 Tell me about Metta Bhavana
+          </button>
+        </div>
+        <!-- Chat Input -->
+        <div class="p-4 border-t">
+          <form id="chat-form" class="flex gap-2">
+            <input
+              type="text"
+              id="chat-input"
+              placeholder="Type your message..."
+              class="chat-input flex-1 px-4 py-2 border-2 rounded-full text-sm"
+              style="border-color: #e5e7eb"
+            />
+            <button
+              type="submit"
+              class="w-10 h-10 rounded-full flex items-center justify-center text-white hover:scale-110 transition-transform"
+              style="background: linear-gradient(135deg, #57329d, #e51d70)"
+            >
+              <svg
+                class="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                viewbox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"
+                ></path>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script>
+      // Mobile menu toggle
+      const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      mobileMenuBtn.addEventListener("click", function (e) {
+        e.preventDefault();
+        mobileMenu.classList.toggle("hidden");
+      });
+
+      // Navigation - Wait for DOM to be ready
+      document.addEventListener("DOMContentLoaded", function () {
+        // Get the scrollable container
+        const scrollContainer = document.querySelector(
+          ".w-full.h-full.overflow-auto"
+        );
+
+        // Handle all navigation links
+        document.body.addEventListener("click", function (e) {
+          const target = e.target.closest("a");
+
+          if (
+            target &&
+            target.getAttribute("href") &&
+            target.getAttribute("href").startsWith("#")
+          ) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            const sectionId = target.getAttribute("href");
+            const section = document.querySelector(sectionId);
+
+            if (section && scrollContainer) {
+              const sectionTop = section.offsetTop - 64;
+              scrollContainer.scrollTo({
+                top: sectionTop,
+                behavior: "smooth",
+              });
+
+              // Close mobile menu if open
+              if (mobileMenu && !mobileMenu.classList.contains("hidden")) {
+                mobileMenu.classList.add("hidden");
+              }
+            }
+          }
+        });
+      });
+
+      // Chatbot functionality
+      const chatButton = document.getElementById("chat-button");
+      const chatWidget = document.getElementById("chat-widget");
+      const chatClose = document.getElementById("chat-close");
+      const chatForm = document.getElementById("chat-form");
+      const chatInput = document.getElementById("chat-input");
+      const chatMessages = document.getElementById("chat-messages");
+      const quickReplyBtns = document.querySelectorAll(".quick-reply-btn");
+
+      // Bot knowledge base
+      const botResponses = {
+        classes: {
+          keywords: [
+            "class",
+            "classes",
+            "course",
+            "sessions",
+            "offer",
+            "teach",
+            "learn",
+          ],
+          response:
+            "🪷 We offer several types of meditation classes:\n\n• Group Meditation Classes - Learn Metta Bhavana in community\n• Private Sessions - One-on-one guidance tailored to you\n• Online Classes - Practice from anywhere\n\nAll classes focus on cultivating loving-kindness, compassion, and inner peace. Would you like to know more about any specific type?",
+        },
+        contact: {
+          keywords: [
+            "contact",
+            "email",
+            "phone",
+            "reach",
+            "call",
+            "message",
+            "whatsapp",
+          ],
+          response:
+            "📧 You can reach us through:\n\n📧 Email: Pyinnyananda12@gmail.com\n\n📱 Phone:\n• Myanmar: +959 266 767 771\n• Thailand: +66 099 350 5076\n\n📍 Location: Mexico City, México\n\nFeel free to contact us anytime! 🙏",
+        },
+        metta: {
+          keywords: [
+            "metta",
+            "loving-kindness",
+            "meditation",
+            "practice",
+            "bhavana",
+            "compassion",
+          ],
+          response:
+            "💜 Metta Bhavana is the practice of cultivating loving-kindness meditation. It develops:\n\n• Unconditional love for all beings\n• Deep compassion (Karuna)\n• Sympathetic joy (Mudita)\n• Equanimity (Upekkha)\n\nThrough regular practice, you experience inner peace, emotional healing, and boundless compassion. Would you like to join a class? 🪷",
+        },
+        teacher: {
+          keywords: [
+            "teacher",
+            "venerable",
+            "pyinnyananda",
+            "who",
+            "instructor",
+            "about you",
+            "background",
+          ],
+          response:
+            "🙏 Venerable PYINNYANANDA is a Buddhist monk with over 20 years of practice:\n\n• 15 years at Pegu Pali University, Myanmar\n• BA & MA in Buddhism from Thailand & Sri Lanka\n• Ph.D. Candidate at Lumbini Buddhist University, Nepal\n• Professor at Kyunhla Buddhist University\n• Metta Bhavana instructor since 2022\n\nHe shares wisdom inspired by Green Tara and Avalokitesvara.",
+        },
+        schedule: {
+          keywords: [
+            "schedule",
+            "when",
+            "time",
+            "timing",
+            "hours",
+            "availability",
+          ],
+          response:
+            "📅 We offer flexible scheduling options:\n\n��� Group classes: Multiple times weekly\n• Private sessions: By appointment\n• Online classes: Various time zones available\n\nPlease contact us to discuss the best schedule for you. We accommodate different time zones and personal needs. 🕐",
+        },
+        location: {
+          keywords: ["where", "location", "address", "place", "mexico", "city"],
+          response:
+            "📍 We are based in Mexico City, México.\n\nWe offer:\n• In-person classes in Mexico City\n�� Online classes for international students\n\nContact us for specific location details and directions! 🗺��",
+        },
+        price: {
+          keywords: [
+            "price",
+            "cost",
+            "fee",
+            "payment",
+            "how much",
+            "expensive",
+          ],
+          response:
+            "💰 For pricing information and class packages, please contact us directly:\n\n📧 Pyinnyananda12@gmail.com\n📱 +959 266 767 771\n\nWe offer various options to make meditation accessible to everyone. Dana (generosity) is an important part of Buddhist practice. 🙏",
+        },
+        beginner: {
+          keywords: [
+            "beginner",
+            "start",
+            "new",
+            "first time",
+            "never",
+            "experience",
+          ],
+          response:
+            "🌱 Beginners are warmly welcome! Our classes are perfect for those new to meditation.\n\nWe guide you step-by-step through:\n• Basic meditation posture\n• Breathing techniques\n• Metta Bhavana practice\n• The Four Immeasurables\n\nNo prior experience needed. Just bring an open heart and willingness to learn! 💚",
+        },
+      };
+
+      // Toggle chat widget
+      chatButton.addEventListener("click", () => {
+        chatWidget.classList.remove("hidden");
+        chatWidget.classList.add("flex");
+        chatButton.style.display = "none";
+      });
+
+      chatClose.addEventListener("click", () => {
+        chatWidget.classList.add("hidden");
+        chatWidget.classList.remove("flex");
+        chatButton.style.display = "block";
+      });
+
+      // Add message to chat
+      function addMessage(message, isUser = false) {
+        const messageDiv = document.createElement("div");
+        messageDiv.className = `flex gap-2 ${isUser ? "justify-end" : ""}`;
+
+        const bubbleDiv = document.createElement("div");
+        bubbleDiv.className = `${
+          isUser ? "chat-bubble-user" : "chat-bubble-bot"
+        } p-3 max-w-xs shadow-sm`;
+
+        const textP = document.createElement("p");
+        textP.className = "text-sm whitespace-pre-line";
+        textP.textContent = message;
+
+        bubbleDiv.appendChild(textP);
+        messageDiv.appendChild(bubbleDiv);
+        chatMessages.appendChild(messageDiv);
+
+        // Scroll to bottom
+        chatMessages.scrollTop = chatMessages.scrollHeight;
+      }
+
+      // Get bot response
+      function getBotResponse(userMessage) {
+        const lowerMessage = userMessage.toLowerCase();
+
+        // Check for greetings
+        if (/^(hi|hello|hey|greetings|namaste)/.test(lowerMessage)) {
+          return "🙏 Namaste! Welcome to Metta Bhavana. How may I assist you on your journey of loving-kindness today?";
+        }
+
+        // Check for gratitude
+        if (/(thank|thanks|appreciate)/.test(lowerMessage)) {
+          return "🙏 You're most welcome! May you be happy and peaceful. Feel free to ask anything else about our meditation classes. 💜";
+        }
+
+        // Check knowledge base
+        for (const [category, data] of Object.entries(botResponses)) {
+          if (data.keywords.some((keyword) => lowerMessage.includes(keyword))) {
+            return data.response;
+          }
+        }
+
+        // Default response
+        return "🪷 Thank you for your question. For detailed information, please feel free to:\n\n📧 Email: Pyinnyananda12@gmail.com\n📱 Call: +959 266 767 771\n\nOr try asking about:\n• Our classes\n• Metta Bhavana practice\n��� Schedule and location\n• Getting started as a beginner\n\nHow else may I help you? 🙏";
+      }
+
+      // Handle form submission
+      chatForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        const userMessage = chatInput.value.trim();
+        if (!userMessage) return;
+
+        // Add user message
+        addMessage(userMessage, true);
+        chatInput.value = "";
+
+        // Simulate typing delay
+        setTimeout(() => {
+          const botResponse = getBotResponse(userMessage);
+          addMessage(botResponse, false);
+        }, 800);
+      });
+
+      // Handle quick reply buttons
+      quickReplyBtns.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const message = btn.getAttribute("data-message");
+          addMessage(message, true);
+
+          setTimeout(() => {
+            const botResponse = getBotResponse(message);
+            addMessage(botResponse, false);
+          }, 800);
+        });
+      });
+
+      if (window.elementSdk) {
+        window.elementSdk.init({
+          defaultConfig: {},
+          onConfigChange: async (config) => {},
+          mapToCapabilities: (config) => ({
+            recolorables: [],
+            borderables: [],
+            fontEditable: undefined,
+            fontSizeable: undefined,
+          }),
+          mapToEditPanelValues: (config) => new Map(),
+        });
+      }
+    </script>
+    <script>
+      (function () {
+        function c() {
+          var b = a.contentDocument || a.contentWindow.document;
+          if (b) {
+            var d = b.createElement("script");
+            d.innerHTML =
+              "window.__CF$cv$params={r:'9ce04236215ec6a2',t:'MTc3MTExMDgzMy4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";
+            b.getElementsByTagName("head")[0].appendChild(d);
+          }
+        }
+        if (document.body) {
+          var a = document.createElement("iframe");
+          a.height = 1;
+          a.width = 1;
+          a.style.position = "absolute";
+          a.style.top = 0;
+          a.style.left = 0;
+          a.style.border = "none";
+          a.style.visibility = "hidden";
+          document.body.appendChild(a);
+          if ("loading" !== document.readyState) c();
+          else if (window.addEventListener)
+            document.addEventListener("DOMContentLoaded", c);
+          else {
+            var e = document.onreadystatechange || function () {};
+            document.onreadystatechange = function (b) {
+              e(b);
+              "loading" !== document.readyState &&
+                ((document.onreadystatechange = e), c());
+            };
+          }
+        }
+      })();
+    </script>
+  </body>
+</html>
